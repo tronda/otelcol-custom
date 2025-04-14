@@ -6,7 +6,7 @@ on:
 
 jobs:
   release:
-    name: Release Custom Distribution
+    name: Release my custom Distribution of OTEL COllector
     uses: ./.github/workflows/base-release.yaml
     with:
       distribution: otelcol-custom
