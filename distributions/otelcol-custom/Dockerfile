@@ -1,7 +1,7 @@
 # Stage 1: Builder
 FROM golang:1.23-bookworm AS builder
 
-ARG OTEL_VERSION=0.111.0
+ARG OTEL_VERSION=0.123.0
 
 WORKDIR /build
 
