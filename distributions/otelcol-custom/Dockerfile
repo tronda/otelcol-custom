@@ -20,7 +20,7 @@ FROM cgr.dev/chainguard/static:latest
 WORKDIR /app
 
 # Copy the generated collector binary from the builder stage
-COPY --from=builder /build/otelcol-custom .
+COPY --from=builder /build/otelcol-tronda .
 
 # Copy the Collector configuration file
 COPY config.yaml .
@@ -29,4 +29,4 @@ COPY config.yaml .
 EXPOSE 4317/tcp 4318/tcp 13133/tcp
 
 # Set the default command
-CMD ["/app/otelcol-custom", "--config=config.yaml"]
+CMD ["/app/otelcol-tronda", "--config=config.yaml"]
